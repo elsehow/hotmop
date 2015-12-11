@@ -2,7 +2,7 @@
   "author": "elsehow",
   "name": "hotmop",
   "description": "Code hotswapping for your node.js modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/elsehow/hotmop",
   "repository": {
     "type": "git",

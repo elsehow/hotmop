@@ -23,7 +23,7 @@ in main.js
 
 ```javascript
 var hotmop = require('hotmop')
-var myCoolModule = require('./myModule1.js')
+var myCoolModule = require('./myModule.js')
 
 var f = __dirname + '/myModule.js'
 var swapper = hotmop(f)
