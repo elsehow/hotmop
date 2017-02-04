@@ -1,6 +1,6 @@
 var EventEmitter = require('events').EventEmitter
   , Gaze = require('gaze')
-  , check = require('syntax-error')
+  // , check = require('syntax-error')
 
 function idempotentRequire (moduleName) {
   delete require.cache[moduleName]
@@ -13,13 +13,14 @@ function setup (path) {
     if (err)
       emitter.emit('error', err)
     gaze.on('changed', () => {
-      var err = check(path)
-      if (err)
-        emitter.emit('error', err)
-      else {
+      // var err = check(path)
+      // console.log('i see', err)
+      // if (err)
+      //   emitter.emit('error', err)
+      // else {
         var m = idempotentRequire(path)
         emitter.emit('swap', m)
-      }
+      // }
     })
   })
   return emitter

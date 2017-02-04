@@ -2,7 +2,7 @@
   "author": "elsehow",
   "name": "hotmop",
   "description": "Code hotswapping for your node.js modules",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "homepage": "https://github.com/elsehow/hotmop",
   "repository": {
     "type": "git",
@@ -13,8 +13,7 @@
     "node": "*"
   },
   "dependencies": {
-    "gaze": "^1.1.2",
-    "syntax-error": "^1.1.6"
+    "gaze": "^1.1.2"
   },
   "devDependencies": {}
 }
